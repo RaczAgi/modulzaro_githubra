@@ -54,7 +54,8 @@ public class Modulzaro {
      * (2 pont)
      */
     public static int getLastNumber(int[][] matrix) {
-        return -1;
+
+        return matrix[matrix.length-1][matrix[matrix.length-1].length-1];
     }
 
     /**
