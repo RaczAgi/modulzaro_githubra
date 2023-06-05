@@ -101,8 +101,16 @@ public class Modulzaro {
      * (5 pont)
      */
     public static int findMaxIndex(int[] array) {
-        return 0;
-    }
+            int max = array[0];
+            int maxIndex = 0;
+            for (int i = 1; i < array.length; i++) {
+                if (array[i] > max) {
+                    max = array[i];
+                    maxIndex = i;
+                }
+            }
+            return maxIndex;
+        }
 
     /**
      * [5. Feladat]
