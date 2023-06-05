@@ -1,4 +1,4 @@
-public class Main {
+public class Modulzaro {
     /**
      * INSTRUKCIÓK - OLVASD EL, MIELŐTT NEKIKEZDESZ!
      *
