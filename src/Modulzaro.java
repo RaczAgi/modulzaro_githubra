@@ -21,6 +21,45 @@ public class Modulzaro {
      */
     public static void main(String[] args) {
         // TODO itt tudod tesztelni a megírt metódusaidat
+        int[][] matrix = {{1,2,3}, {2,3,4,5}};
+        int[] array = {0, 7, 2, 3, 4, 5, 6, 1};
+        int[] firstNumbers = {0, 1, 2, 3, 4};
+        int[] secondNumbers = {5, 6, 5, 4, 4, 4, 3};
+        String[] sokSikert = {"Hát látod, itt az első sor,",
+                "Alatta a második",
+                "Jó kis példát találtam ki nektek,",
+                "Remélem mindenki",
+                "Átmegy."};
+        String[] poem = {"Nyár,",
+                "A régi vágyam egyre jobban",
+                "Lobban,",
+                "De vár még, egyre vár.",
+                "Kár",
+                "Így késlekedned, mert az éj setétül.",
+                "Az élet",
+                "Siralmas és sivár",
+                "Enélkül.",
+                "Gigászi vágyam éhes, mint a hörcsög,",
+                "Görcsök",
+                "Emésztik s forró titkom mélye szörcsög.",
+                "Mostan hajolj feléje.",
+                "Közel a lázak kéjes éje.",
+                "Akarod?",
+                "Remegve nyújtsd a szájad és karod.",
+                "Itt ez ital illatja tégedet vár.",
+                "Nektár.",
+                "Te",
+                "Hűtelen, boldog leszel majd újra, hidd meg.",
+                "Idd meg."};
+        int[] socks = {30, 10, 30, 10, 30, 30, 20, 10, 30, 10, 30};
+        System.out.println("A mátrix utolsó eleme: " + getLastNumber(matrix));
+        System.out.println("A tömbben " + countEvenNumbers(array) + " páros szám szerepel.");
+        System.out.println("A keresett szám indexe: " + findNumber(array, 3));
+        System.out.println("A tömb legnagyobb eleme a " + findMaxIndex(array) + ". indexen található.");
+        System.out.println("Az egyforma elemek száma: " + countSameNumbers(firstNumbers, secondNumbers));
+        System.out.println(decodeAcrostic(sokSikert));
+        System.out.println(decodeAcrostic(poem));
+        System.out.println(findTheOneSock(socks));
     }
 
     /**
