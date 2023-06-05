@@ -184,37 +184,42 @@ public class Modulzaro {
      * (5 pont)
      **/
     public static String decodeAcrostic(String[] poem) {
-        return null;
-    }
+            String answare = "";
+            for (int i = 0; i < poem.length; i++) {
+                answare += poem[i].charAt(0);
+            }
+            return answare;
+        }
 
-    /**
-     * [SZORGALMI - 7. Feladat]
-     * SZORGALMI - Nem kell teljesíteni a 100% eléréséhez!
-     *
-     * A zoknijaimat mindig párban teszem a mosógépbe, ám a teregetésnél szomorúan tapasztalom,
-     * hogy az egyik zoknim (és mindig csak az egyik zoknim) egyik párja unos-untalan elvész...
-     * Micsoda rejtelem! Ám szerencsére nem kell feltárnod ezt a misztikus jelenséget.
-     *
-     * Valósítsd meg a findTheOneSock metódust, amely bemeneti paraméterként nem-negatív egész számokat tartalmazó tömböt kap
-     * (szimbolizálva a zoknijaimat a teregetéskor), és visszatérési értéke a tömb azon értéke, amelynek nincsen párja a tömbben.
-     * A tömbben a számok párosával szerepelnek - előfordulhat, hogy kétszer, négyszer, hatszor... vagy többször.
-     * Ám egy, és mindig csak egy szám pár nélkül szerepel.
-     * A metódusodnak ezt az egyedül, pár nélkül lévő számot kell visszaadnia.
-     *
-     * Példa1.:     a tömb: {30, 10, 30, 10, 30, 30, 20, 10, 30, 10, 30}
-     *              megoldás: 20
-     *              indoklás:
-     *                  a számpárok: 30-30, 10-10, 30-30, 10-10, 30-30
-     *                  pár nélküli: 20
-     *
-     * Példa2.:     a tömb: {56, 1, 33, 42, 0, 86, 42, 86, 1, 56, 0}
-     *              megoldás: 33
-     *              indoklás:
-     *                  a számpárok: 56-56, 1-1, 42-42, 0-0, 86-86
-     *                  pár nélküli: 33
-     *
-     * (6 pont)
-     */
+
+        /**
+         * [SZORGALMI - 7. Feladat]
+         * SZORGALMI - Nem kell teljesíteni a 100% eléréséhez!
+         *
+         * A zoknijaimat mindig párban teszem a mosógépbe, ám a teregetésnél szomorúan tapasztalom,
+         * hogy az egyik zoknim (és mindig csak az egyik zoknim) egyik párja unos-untalan elvész...
+         * Micsoda rejtelem! Ám szerencsére nem kell feltárnod ezt a misztikus jelenséget.
+         *
+         * Valósítsd meg a findTheOneSock metódust, amely bemeneti paraméterként nem-negatív egész számokat tartalmazó tömböt kap
+         * (szimbolizálva a zoknijaimat a teregetéskor), és visszatérési értéke a tömb azon értéke, amelynek nincsen párja a tömbben.
+         * A tömbben a számok párosával szerepelnek - előfordulhat, hogy kétszer, négyszer, hatszor... vagy többször.
+         * Ám egy, és mindig csak egy szám pár nélkül szerepel.
+         * A metódusodnak ezt az egyedül, pár nélkül lévő számot kell visszaadnia.
+         *
+         * Példa1.:     a tömb: {30, 10, 30, 10, 30, 30, 20, 10, 30, 10, 30}
+         *              megoldás: 20
+         *              indoklás:
+         *                  a számpárok: 30-30, 10-10, 30-30, 10-10, 30-30
+         *                  pár nélküli: 20
+         *
+         * Példa2.:     a tömb: {56, 1, 33, 42, 0, 86, 42, 86, 1, 56, 0}
+         *              megoldás: 33
+         *              indoklás:
+         *                  a számpárok: 56-56, 1-1, 42-42, 0-0, 86-86
+         *                  pár nélküli: 33
+         *
+         * (6 pont)
+         */
     public static int findTheOneSock(int[] socks) {
         return -1;
     }
