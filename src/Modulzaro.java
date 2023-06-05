@@ -83,8 +83,14 @@ public class Modulzaro {
      * (4 pont)
      */
     public static int findNumber(int[] array, int number) {
-        return -1;
-    }
+        public static int findNumber(int[] array, int number) {
+            for (int i = 0; i < array.length; i++) {
+                if (array[i] == number) {
+                    return i;
+                }
+            }
+            return -1;
+        }
 
     /**
      * [4. Feladat]
